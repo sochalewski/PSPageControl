@@ -7,7 +7,7 @@ First at all import library to your view controller.
 #import "PSPageControl.h"
 ```
 
-Then add proper code to your `viewDidLoad` or another place where you need it.
+Then add `UIView` in your storyboard/xib (or create view programmatically), change its class to `PSPageControl` and drag and drop to create `IBOutlet`. Next add proper code to your `viewDidLoad` or another place where you need it.
 ```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
