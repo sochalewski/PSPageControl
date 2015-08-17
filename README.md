@@ -1,12 +1,18 @@
 # PSPageControl
 
+## Demo
+<img src="http://zippy.gfycat.com/IllinformedDismalEland.gif"/>
+<a href="http://gfycat.com/IllinformedDismalEland" target="+blank">GFY here</a>
+
 ## Usage
+<iframe src="http://gfycat.com/ifr/IllinformedDismalEland" frameborder="0" scrolling="no" width="750" height="1334" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
 
 First at all import library to your view controller.
 ```objc
 #import "PSPageControl.h"
 ```
 
+<img class="gfyitem" data-id="IllinformedDismalEland" />
 Then add `UIView` in your storyboard/xib (or create view programmatically), change its class to `PSPageControl` and drag and drop to create `IBOutlet`. Next add proper code to your `viewDidLoad` or another place where you need it.
 ```objc
 - (void)viewDidLoad {
