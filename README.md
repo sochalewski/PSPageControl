@@ -29,7 +29,6 @@ Then add proper code to your `viewDidLoad` or another place where you need it.
         label.text = [NSString stringWithFormat:@"View #%lu", i];
 
         [view addSubview:label];
-        [view addSubview:description];
         [views addObject:view];
     }
 
