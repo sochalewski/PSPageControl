@@ -97,7 +97,7 @@ More complex method goes here.
 ## Properties
 **PSPagecontrol** has a few properties that let you configure the library.
 
-* `backgroundPicture` is an image shown in the background. Remember that it should be horizontal with high resolution.
+* `backgroundPicture` is an image shown in the background. Remember that it should be horizontal with proper ratio and high resolution.
 * `views` is array of `UIView`s to be shown by page control.
 * `offsetPerPageInPixels` is offset used swipe by swipe from one to another view. Default is `40`.
 * `pageIndicatorTintColor` is `UIColor` used by inactive page control indicator.

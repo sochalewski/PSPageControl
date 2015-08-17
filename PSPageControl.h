@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Piotr Sochalewski. All rights reserved.
 //
 
+@import AVFoundation;
 @import UIKit;
 
 @interface PSPageControl : UIView

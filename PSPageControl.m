@@ -52,9 +52,13 @@
 }
 
 - (void)initialize {
+    // Default values
+    self.offsetPerPageInPixels = 40;
+    self.currentViewIndex = 0;
+    
     // Background image
     self.background = [UIImageView new];
-    self.background.contentMode = UIViewContentModeScaleAspectFill;
+    self.background.contentMode = UIViewContentModeLeft;
     [self addSubview:self.background];
     
     // Page control
@@ -64,10 +68,6 @@
     
     // Array of views not allowed to remove from superview
     self.subviewsNotAllowedToRemoveFromSuperview = @[self.background, self.pageControl];
-    
-    self.offsetPerPageInPixels = 40;
-    self.backgroundLayerFrameOrigin = CGPointZero;
-    self.currentViewIndex = 0;
 }
 
 #pragma mark - Layout
@@ -75,8 +75,10 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    // Background image
+    // Backround image
     self.background.frame = self.frame;
+    self.background.layer.frame = CGRectMake(-(NSInteger)self.offsetPerPageInPixels, 0, CGRectGetWidth(self.background.layer.frame), CGRectGetHeight(self.background.layer.frame));
+    self.backgroundLayerFrameOrigin = self.background.layer.frame.origin;
     
     //Page control
     self.pageControl.frame = CGRectMake(10, CGRectGetHeight(self.frame)-40, CGRectGetWidth(self.frame)-20, 30);
@@ -87,7 +89,14 @@
 - (void)setBackgroundPicture:(UIImage *)backgroundPicture {
     _backgroundPicture = backgroundPicture;
     
-    self.background.image = backgroundPicture;
+    CGSize size = AVMakeRectWithAspectRatioInsideRect(backgroundPicture.size, CGRectMake(0, 0, CGFLOAT_MAX, CGRectGetHeight(self.frame))).size;
+    
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    [backgroundPicture drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.background.image = image;
 }
 
 - (void)setViews:(NSArray *)views {
@@ -194,7 +203,6 @@
         }
         
         self.background.layer.frame = CGRectMake(self.backgroundLayerFrameOrigin.x + (differenceInTouchXAxis/CGRectGetWidth(self.frame))*self.offsetPerPageInPixels, 0, CGRectGetWidth(self.background.layer.frame), CGRectGetHeight(self.background.layer.frame));
-        NSLog(@"%@", NSStringFromCGRect(self.background.layer.frame));
     }];
 }
 
