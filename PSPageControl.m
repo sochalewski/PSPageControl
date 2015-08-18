@@ -64,6 +64,7 @@
     // Page control
     self.pageControl = [UIPageControl new];
     self.pageControl.numberOfPages = self.views.count;
+    [self.pageControl addTarget:self action:@selector(pageControlValueChanged:) forControlEvents:UIControlEventValueChanged];
     [self addSubview:self.pageControl];
     
     // Array of views not allowed to remove from superview
@@ -81,7 +82,7 @@
     self.backgroundLayerFrameOrigin = self.background.layer.frame.origin;
     
     //Page control
-    self.pageControl.frame = CGRectMake(10, CGRectGetHeight(self.frame)-40, CGRectGetWidth(self.frame)-20, 30);
+    self.pageControl.frame = CGRectMake(10, CGRectGetHeight(self.frame)-50, CGRectGetWidth(self.frame)-20, 40);
 }
 
 #pragma mark - Setters
@@ -114,6 +115,7 @@
         [self addSubview:view];
     }
     
+    [self bringSubviewToFront:self.pageControl];
     self.pageControl.numberOfPages = self.views.count;
 }
 
@@ -129,7 +131,7 @@
 
 #pragma mark - Views
 
-- (void)setVisibleViewWithIndex:(NSInteger)index {
+- (void)setVisibleViewWithIndex:(NSInteger)index setCurrentPage:(BOOL)setCurrentPage {
     // Background image
     if (index != self.currentViewIndex) {
         CGFloat newX = (index > self.currentViewIndex) ? self.backgroundLayerFrameOrigin.x-self.offsetPerPageInPixels : self.backgroundLayerFrameOrigin.x+self.offsetPerPageInPixels;
@@ -158,7 +160,10 @@
             view.frame = CGRectMake((i-index)*CGRectGetWidth(self.frame), 0, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
         }
     } completion:^(BOOL finished) {
-        self.pageControl.currentPage = index;
+        if (setCurrentPage) {
+            self.pageControl.currentPage = index;
+
+        }
         self.currentViewIndex = index;
     }];
 }
@@ -211,12 +216,18 @@
     
     NSInteger differenceInTouchXAxis = [self differenceFromTouches:touches];
     if (differenceInTouchXAxis < -100) {
-        [self setVisibleViewWithIndex:(self.currentViewIndex+1 >= self.views.count) ? self.currentViewIndex : self.currentViewIndex+1];
+        [self setVisibleViewWithIndex:((self.currentViewIndex+1 >= self.views.count) ? self.currentViewIndex : self.currentViewIndex+1) setCurrentPage:YES];
     } else if (differenceInTouchXAxis > 100) {
-        [self setVisibleViewWithIndex:(self.currentViewIndex < 1) ? self.currentViewIndex : self.currentViewIndex-1];
+        [self setVisibleViewWithIndex:((self.currentViewIndex < 1) ? self.currentViewIndex : self.currentViewIndex-1) setCurrentPage:YES];
     } else {
-        [self setVisibleViewWithIndex:self.currentViewIndex];
+        [self setVisibleViewWithIndex:self.currentViewIndex setCurrentPage:NO];
     }
+}
+
+#pragma mark - Page Control
+
+- (void)pageControlValueChanged:(UIPageControl *)pageControl {
+    [self setVisibleViewWithIndex:pageControl.currentPage setCurrentPage:NO];
 }
 
 @end
