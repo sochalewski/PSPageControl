@@ -162,7 +162,6 @@
     } completion:^(BOOL finished) {
         if (setCurrentPage) {
             self.pageControl.currentPage = index;
-
         }
         self.currentViewIndex = index;
     }];
@@ -171,17 +170,11 @@
 #pragma mark - Math
 
 - (NSInteger)differenceBetweenStartPosition:(CGPoint)startPosition andCurrentPosition:(CGPoint)currentPosition {
-    NSUInteger startX = startPosition.x;
-    NSUInteger currentX = currentPosition.x;
-    
-    return currentX - startX;
+    return (currentPosition.x - startPosition.x);
 }
 
 - (NSInteger)differenceFromTouches:(NSSet *)touches {
-    CGPoint movingPosition;
-    for (UITouch *touch in touches) {
-        movingPosition = [touch locationInView:self];
-    }
+    CGPoint movingPosition = [touches.anyObject locationInView:self];
     
     return [self differenceBetweenStartPosition:self.touchPosition andCurrentPosition:movingPosition];
 }
@@ -191,9 +184,7 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
     
-    for (UITouch *touch in touches) {
-        self.touchPosition = [touch locationInView:self];
-    }
+    self.touchPosition = [touches.anyObject locationInView:self];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
