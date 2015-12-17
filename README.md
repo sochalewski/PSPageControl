@@ -1,7 +1,10 @@
 # PSPageControl
 
 ## Demo
-[GFY here](http://gfycat.com/IllinformedDismalEland)
+<p align="center">
+<img src="http://i.imgur.com/pERmajx.gif" alt="PSPageControl example"><br />
+<a href="http://gfycat.com/IllinformedDismalEland" target="_blank">GFY here</a>
+</p>
 
 ## Usage
 First at all import library to your view controller.
