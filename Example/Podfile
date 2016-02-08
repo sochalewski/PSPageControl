@@ -7,6 +7,4 @@ end
 
 target 'PSPageControl_Tests', :exclusive => true do
   pod 'PSPageControl', :path => '../'
-
-  
 end

@@ -1,0 +1,14 @@
+PODS:
+  - PSPageControl (0.1.0)
+
+DEPENDENCIES:
+  - PSPageControl (from `../`)
+
+EXTERNAL SOURCES:
+  PSPageControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PSPageControl: 516b91fae0d0ad006a23fd4fcae761b33a3fa0d2
+
+COCOAPODS: 0.39.0
