@@ -8,13 +8,14 @@
 
 import AVFoundation
 import UIKit
+import UIImageViewAlignedSwift
 
 public class PSPageControl: UIView {
     
     /**
      The image shown in the background. It should be horizontal with proper ratio and high resolution.
      */
-    var backgroundPicture: UIImage? {
+    public var backgroundPicture: UIImage? {
         didSet {
             guard let backgroundPicture = backgroundPicture else { return }
             
@@ -32,7 +33,7 @@ public class PSPageControl: UIView {
     /**
      The array of `UIView`s to be shown by page control.
      */
-    var views: [UIView]? {
+    public var views: [UIView]? {
         didSet {
             subviews.forEach { subview in
                 if !subviewsNotAllowedToRemoveFromSuperview.contains(subview) {
@@ -55,12 +56,12 @@ public class PSPageControl: UIView {
     /**
      Offset per page in pixels. Default is `40`.
      */
-    var offsetPerPage: UInt = 40
+    public var offsetPerPage: UInt = 40
     
     /**
      The tint color to be used for the page indicator.
      */
-    var pageIndicatorTintColor: UIColor? {
+    public var pageIndicatorTintColor: UIColor? {
         set {
             pageControl.pageIndicatorTintColor = newValue
         }
@@ -72,7 +73,7 @@ public class PSPageControl: UIView {
     /**
      The tint color to be used for the current page indicator.
      */
-    var currentPageIndicatorTintColor: UIColor? {
+    public var currentPageIndicatorTintColor: UIColor? {
         set {
             pageControl.currentPageIndicatorTintColor = newValue
         }
@@ -82,7 +83,7 @@ public class PSPageControl: UIView {
     }
     
     private var subviewsNotAllowedToRemoveFromSuperview = [UIView]()
-    private var background = UIImageView()
+    private var background = UIImageViewAligned()
     private var pageControl = UIPageControl()
     private var touchPosition: CGPoint?
     private var currentViewIndex: Int = 0
@@ -90,7 +91,8 @@ public class PSPageControl: UIView {
     
     private func setup() {
         // Background image
-        background.contentMode = .Left //.ScaleAspectFill
+        background.contentMode = .ScaleAspectFill
+        background.alignment = .Left
         addSubview(background)
         
         // Page control
@@ -101,22 +103,22 @@ public class PSPageControl: UIView {
         subviewsNotAllowedToRemoveFromSuperview = [background, pageControl]
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         // Background image
         background.frame = frame
-        background.layer.frame = CGRect(x: CGFloat(-offsetPerPage),
+        background.layer.frame = CGRect(x: -CGFloat(offsetPerPage),
             y: 0.0,
             width: background.layer.frame.width,
             height: background.layer.frame.height)
@@ -156,11 +158,7 @@ public class PSPageControl: UIView {
                     case let x where x < index:
                         newX = CGFloat(-(index - i)) * self.frame.width
                     case let x where x > index:
-<<<<<<< Updated upstream
                         newX = CGFloat(i - index) * self.frame.width
-=======
-                        newX = CGFloat((i - index)) * self.frame.width
->>>>>>> Stashed changes
                     default:
                         newX = 0.0
                     }
@@ -185,13 +183,13 @@ public class PSPageControl: UIView {
         return Int(movingPosition!.x - touchPosition!.x)
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         super.touchesBegan(touches, withEvent: event)
         
         touchPosition = touches.first?.locationInView(self)
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         super.touchesMoved(touches, withEvent: event)
         
         let differenceInTouchXAxis = differenceFromTouches(touches)
@@ -207,7 +205,7 @@ public class PSPageControl: UIView {
         }
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         super.touchesEnded(touches, withEvent: event)
         
         let differenceInTouchXAxis = differenceFromTouches(touches)

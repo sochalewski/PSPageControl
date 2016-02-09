@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-PSPageControl_Tests/PSPageControl.framework"
+  install_framework "Pods-PSPageControl_Tests/UIImageViewAlignedSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-PSPageControl_Tests/PSPageControl.framework"
+  install_framework "Pods-PSPageControl_Tests/UIImageViewAlignedSwift.framework"
 fi

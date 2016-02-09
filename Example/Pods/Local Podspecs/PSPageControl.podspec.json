@@ -1,25 +1,26 @@
 {
   "name": "PSPageControl",
   "version": "0.1.0",
-  "summary": "A short description of PSPageControl.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/PSPageControl",
+  "summary": "Easy parallax effect in UIPageControl",
+  "description": "Easy parallax effect in UIPageControl in Swift.",
+  "homepage": "https://github.com/sochalewski/PSPageControl",
   "license": "MIT",
   "authors": {
-    "Piotr Sochalewski": "piotr.sochalewski@droidsonroids.pl"
+    "Piotr Sochalewski": "sochalewski@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/PSPageControl.git",
+    "git": "https://github.com/sochalewski/PSPageControl.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "PSPageControl": [
-      "Pod/Assets/*.png"
+  "source_files": "*.swift",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "UIImageViewAlignedSwift": [
+
     ]
   }
 }
