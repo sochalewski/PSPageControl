@@ -20,7 +20,7 @@ public class PSPageControl: UIView {
             guard let backgroundPicture = backgroundPicture else { return }
             
             let size = AVMakeRectWithAspectRatioInsideRect(backgroundPicture.size,
-                CGRect(x: 0, y: 0, width: CGFloat.max, height: frame.height)).size
+                CGRect(x: 0.0, y: 0.0, width: CGFloat.max, height: frame.height)).size
             UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
             backgroundPicture.drawInRect(CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height))
             let image = UIGraphicsGetImageFromCurrentImageContext()
@@ -140,7 +140,10 @@ public class PSPageControl: UIView {
         
         let duration = (index == currentViewIndex) ? 0.3 : 0.2
         UIView.animateWithDuration(duration) {
-            self.background.layer.frame = CGRect(x: self.backgroundLayerFrameOrigin!.x, y: 0.0, width: self.background.layer.frame.width, height: self.background.layer.frame.height)
+            self.background.layer.frame = CGRect(x: self.backgroundLayerFrameOrigin!.x,
+                y: 0.0,
+                width: self.background.layer.frame.width,
+                height: self.background.layer.frame.height)
         }
         
         // Views
@@ -201,7 +204,10 @@ public class PSPageControl: UIView {
                     width: self.background.layer.frame.width,
                     height: self.background.layer.frame.height)
             }
-            self.background.layer.frame = CGRect(x: self.backgroundLayerFrameOrigin!.x + (CGFloat(differenceInTouchXAxis) / self.frame.width) * CGFloat(self.offsetPerPage), y: 0.0, width: self.background.layer.frame.width, height: self.background.layer.frame.height)
+            self.background.layer.frame = CGRect(x: self.backgroundLayerFrameOrigin!.x + (CGFloat(differenceInTouchXAxis) / self.frame.width) * CGFloat(self.offsetPerPage),
+                y: 0.0,
+                width: self.background.layer.frame.width,
+                height: self.background.layer.frame.height)
         }
     }
     
@@ -212,7 +218,7 @@ public class PSPageControl: UIView {
         
         switch differenceInTouchXAxis {
         case let x where x < -100:
-            showViewWithIndex(currentViewIndex+1 >= views!.count ? currentViewIndex : currentViewIndex + 1, setCurrentPage: true)
+            showViewWithIndex(currentViewIndex + 1 >= views!.count ? currentViewIndex : currentViewIndex + 1, setCurrentPage: true)
         case let x where x > 100:
             showViewWithIndex(currentViewIndex < 1 ? currentViewIndex : currentViewIndex - 1, setCurrentPage: true)
         default:
