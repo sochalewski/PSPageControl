@@ -10,7 +10,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-Swift 2.x, iOS8+
+Swift 2.x, iOS 8+
 
 ## Installation
 
@@ -115,7 +115,7 @@ override func viewDidLoad() {
 ```
 
 ## Properties
-**PSPagecontrol** has a few variables that let you configure the library.
+**PSPageControl** has a few variables that let you configure the library.
 
 * `backgroundPicture` is an image shown in the background. Remember that it should be horizontal with proper ratio and high resolution.
 * `views` is array of `UIView`s to be shown by page control.
