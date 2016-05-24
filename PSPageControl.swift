@@ -82,6 +82,20 @@ public class PSPageControl: UIView {
         }
     }
     
+    /**
+     The frame rectangle, which describes the page indicators' location and size in its superview’s coordinate system.
+     
+     Changes to this property can be animated.
+     */
+    public var pageIndicatorFrame: CGRect {
+        get {
+            return pageControl.frame
+        }
+        set {
+            pageControl.frame = newValue
+        }
+    }
+    
     private var subviewsNotAllowedToRemoveFromSuperview = [UIView]()
     private var background = UIImageViewAligned()
     private var pageControl = UIPageControl()

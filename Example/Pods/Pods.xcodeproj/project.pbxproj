@@ -1,867 +1,2055 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		00EE66745833B186F9A7B5E13D7B556B /* PSPageControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90661CD46487126D5396E99859ECF623 /* PSPageControl-dummy.m */; };
-		0B80F05800E1A4A4FF92C7C8CBABE963 /* Pods-PSPageControl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 763442DC6829B995F2DB021819332614 /* Pods-PSPageControl_Tests-dummy.m */; };
-		17A86DEC8CBD716AD5D54864F1B43456 /* UIImageViewAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066668544D49FD20830650C69C988E40 /* UIImageViewAligned.swift */; };
-		1B178CCB80494D6C01AE99B66B076E7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829B1541F4A4186CFC8894128B0DF28D /* Foundation.framework */; };
-		1DE359C63FD749C37DA7C9ACDF821DAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829B1541F4A4186CFC8894128B0DF28D /* Foundation.framework */; };
-		413E46B1DF80C25FD2CA1232BACC0EAD /* UIImageViewAlignedSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0C8CF1FF4C7C9A615EF6E885A5B573 /* UIImageViewAlignedSwift.framework */; };
-		765BC5CD7E292FF8F4D6FBBCEC71E0C9 /* Pods-PSPageControl_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98059E250D33950C61F528B2B8EB96B9 /* Pods-PSPageControl_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79F5A96CEBB2F413BDD66F44AF40B79C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829B1541F4A4186CFC8894128B0DF28D /* Foundation.framework */; };
-		89230BA47A4CB8BCADDB6A3071C5E129 /* PSPageControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C555206376328BC8ED9E9923C4FFEE /* PSPageControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		919574339869B7B5E2CEDBF95B60BCBF /* UIImageViewAlignedSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6191CDA36E4471D3BD1926016F2702 /* UIImageViewAlignedSwift-dummy.m */; };
-		B2C4692A8F710681B683A0D1662E08EA /* Pods-PSPageControl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC9FAB5718E04055FE8EB283C4100 /* Pods-PSPageControl_Example-dummy.m */; };
-		D5BC700D67D8C87F82270E93D3E22577 /* UIImageViewAlignedSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 363281C506939B2610DA857BE5FBB181 /* UIImageViewAlignedSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC2E4896991C28397140BC6090242DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7761555C06CF53698DF0DF7D7EB8B0 /* UIKit.framework */; };
-		E4AB42B680F259D9DCD77BEC9D88847A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829B1541F4A4186CFC8894128B0DF28D /* Foundation.framework */; };
-		F93698E79A01244CD0B5F17FC7961A7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7761555C06CF53698DF0DF7D7EB8B0 /* UIKit.framework */; };
-		FD270D15A6417934B53B224FD4B0C40B /* Pods-PSPageControl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9793A5BCF2A60E30129920C7CC4C9986 /* Pods-PSPageControl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD2D799353CBB5E20A3583A70AD04B90 /* PSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AB1997A9C6C878C5B41EAA25ECE742 /* PSPageControl.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		24B068F68563C8CCB1D62345E1FEED1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0D0C54F9E4D9BC6BB65770FEBF0804EA;
-			remoteInfo = PSPageControl;
-		};
-		298D6831A7D52D059ACF877186734AAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 66D36FF3B8867965A8271B24E14B3F9A;
-			remoteInfo = UIImageViewAlignedSwift;
-		};
-		510B2086F96036BA11B425B085551BCD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 66D36FF3B8867965A8271B24E14B3F9A;
-			remoteInfo = UIImageViewAlignedSwift;
-		};
-		C46AD82A98F984C67DBC8614151D11DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 66D36FF3B8867965A8271B24E14B3F9A;
-			remoteInfo = UIImageViewAlignedSwift;
-		};
-		FD50D819EE2865666FA4906047786C5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0D0C54F9E4D9BC6BB65770FEBF0804EA;
-			remoteInfo = PSPageControl;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		066668544D49FD20830650C69C988E40 /* UIImageViewAligned.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIImageViewAligned.swift; sourceTree = "<group>"; };
-		1627A6B073C47146F67E4A35CA631F9F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19AB1997A9C6C878C5B41EAA25ECE742 /* PSPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PSPageControl.swift; sourceTree = "<group>"; };
-		29857E9F64297722F69B6B1E8A4E0410 /* Pods-PSPageControl_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PSPageControl_Example-frameworks.sh"; sourceTree = "<group>"; };
-		2BC3DC6F5789E995B602C0E8EE992732 /* Pods-PSPageControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSPageControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		33C903B0FDEF2678737412AE2A7C0AD0 /* Pods-PSPageControl_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PSPageControl_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		363281C506939B2610DA857BE5FBB181 /* UIImageViewAlignedSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageViewAlignedSwift-umbrella.h"; sourceTree = "<group>"; };
-		399FDD5B0EFEC3F0EAFECB0F619E76A9 /* Pods-PSPageControl_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PSPageControl_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		46DB424267DFACA4D263DAD5DB644DC1 /* UIImageViewAlignedSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIImageViewAlignedSwift.xcconfig; sourceTree = "<group>"; };
-		4C4B40BF9FD14ABA267E9088113C897F /* Pods_PSPageControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSPageControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E4FC2B4D02F1B20F7D56DB41F35E85C /* UIImageViewAlignedSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIImageViewAlignedSwift.modulemap; sourceTree = "<group>"; };
-		4F6D16BE6CB4531F3DA69C9515F169BF /* PSPageControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSPageControl-prefix.pch"; sourceTree = "<group>"; };
-		5C96272F0C1B30B4D09649964B397AC9 /* Pods_PSPageControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSPageControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BBC1C9DC23185CECC5F4E0F99B97C1C /* Pods-PSPageControl_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PSPageControl_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6EF7D51CAD2D3A849AB5EC0EF727A715 /* UIImageViewAlignedSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageViewAlignedSwift-prefix.pch"; sourceTree = "<group>"; };
-		70C3AAF419AD1826066FB89E81F20D58 /* Pods-PSPageControl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PSPageControl_Example.modulemap"; sourceTree = "<group>"; };
-		710665F25D1D03A33891BCF88BB55849 /* Pods-PSPageControl_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PSPageControl_Tests-resources.sh"; sourceTree = "<group>"; };
-		75CBCEBAC17569BC2F10ADE352D51F97 /* Pods-PSPageControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSPageControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		763442DC6829B995F2DB021819332614 /* Pods-PSPageControl_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PSPageControl_Tests-dummy.m"; sourceTree = "<group>"; };
-		79C555206376328BC8ED9E9923C4FFEE /* PSPageControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSPageControl-umbrella.h"; sourceTree = "<group>"; };
-		829B1541F4A4186CFC8894128B0DF28D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		88DAC9FAB5718E04055FE8EB283C4100 /* Pods-PSPageControl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PSPageControl_Example-dummy.m"; sourceTree = "<group>"; };
-		90661CD46487126D5396E99859ECF623 /* PSPageControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PSPageControl-dummy.m"; sourceTree = "<group>"; };
-		90EC57AF0A8A54FF3213254D5AC541C3 /* Pods-PSPageControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSPageControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		91AD0E1ED43F074E64CB4FF3C9F854DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		930BA680286DADAF354579DF8D0EB2F2 /* PSPageControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PSPageControl.xcconfig; sourceTree = "<group>"; };
-		9338BC17543BBECF990AF6DC7ABAB303 /* UIImageViewAlignedSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIImageViewAlignedSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9793A5BCF2A60E30129920C7CC4C9986 /* Pods-PSPageControl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PSPageControl_Example-umbrella.h"; sourceTree = "<group>"; };
-		98059E250D33950C61F528B2B8EB96B9 /* Pods-PSPageControl_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PSPageControl_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9A57CE49C1DCA109E133DDECDC329E7F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AAAEFAF164A572DDA8F1AF44AD06B09 /* PSPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PSPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EC1E707FB1A4030F43CF7163EA6AED6 /* Pods-PSPageControl_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PSPageControl_Tests.modulemap"; sourceTree = "<group>"; };
-		B1C5AEBF07F46C80D6DE5AA3E598356C /* Pods-PSPageControl_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PSPageControl_Example-resources.sh"; sourceTree = "<group>"; };
-		B57D270C15DB2F54E01A3C1AC44308E7 /* Pods-PSPageControl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PSPageControl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		CE0C8CF1FF4C7C9A615EF6E885A5B573 /* UIImageViewAlignedSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIImageViewAlignedSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D60C6CE0A609E482DB95C48310554FCE /* Pods-PSPageControl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PSPageControl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		DB6191CDA36E4471D3BD1926016F2702 /* UIImageViewAlignedSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageViewAlignedSwift-dummy.m"; sourceTree = "<group>"; };
-		E85C951DD3BC2FE7083709361E5B22E1 /* Pods-PSPageControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PSPageControl_Example.release.xcconfig"; sourceTree = "<group>"; };
-		ECD62949FB75E42B3C4B49A074797B80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED7761555C06CF53698DF0DF7D7EB8B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F85A1DB706518B876C0E7FBB05FCC2F0 /* PSPageControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PSPageControl.modulemap; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		574D385CCEB07D43BC1B8587920CCF10 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E4AB42B680F259D9DCD77BEC9D88847A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		76DD0D0AF7EAB640A97E7A1AAD080FD6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DE359C63FD749C37DA7C9ACDF821DAF /* Foundation.framework in Frameworks */,
-				413E46B1DF80C25FD2CA1232BACC0EAD /* UIImageViewAlignedSwift.framework in Frameworks */,
-				DC2E4896991C28397140BC6090242DAB /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A876A1CB2A6D50AF164D7994CDD999D0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79F5A96CEBB2F413BDD66F44AF40B79C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D94AEBE546AD7687D9BA1D69AC781DBB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B178CCB80494D6C01AE99B66B076E7D /* Foundation.framework in Frameworks */,
-				F93698E79A01244CD0B5F17FC7961A7F /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		1EE61057CF9F5E5C0761E0845D1DCC60 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5C96272F0C1B30B4D09649964B397AC9 /* Pods_PSPageControl_Example.framework */,
-				4C4B40BF9FD14ABA267E9088113C897F /* Pods_PSPageControl_Tests.framework */,
-				9AAAEFAF164A572DDA8F1AF44AD06B09 /* PSPageControl.framework */,
-				9338BC17543BBECF990AF6DC7ABAB303 /* UIImageViewAlignedSwift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		28867A4C7D6A26370E9324DF8DD4BCF7 /* PSPageControl */ = {
-			isa = PBXGroup;
-			children = (
-				19AB1997A9C6C878C5B41EAA25ECE742 /* PSPageControl.swift */,
-				54CCB839ADD11243CB0A077B2240A65F /* Support Files */,
-			);
-			name = PSPageControl;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		54CCB839ADD11243CB0A077B2240A65F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1627A6B073C47146F67E4A35CA631F9F /* Info.plist */,
-				F85A1DB706518B876C0E7FBB05FCC2F0 /* PSPageControl.modulemap */,
-				930BA680286DADAF354579DF8D0EB2F2 /* PSPageControl.xcconfig */,
-				90661CD46487126D5396E99859ECF623 /* PSPageControl-dummy.m */,
-				4F6D16BE6CB4531F3DA69C9515F169BF /* PSPageControl-prefix.pch */,
-				79C555206376328BC8ED9E9923C4FFEE /* PSPageControl-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PSPageControl";
-			sourceTree = "<group>";
-		};
-		6B21C33BA264B127C23D0DC2EF7B80CC /* UIImageViewAlignedSwift */ = {
-			isa = PBXGroup;
-			children = (
-				066668544D49FD20830650C69C988E40 /* UIImageViewAligned.swift */,
-				7246162D7A80468F21512D0B41A5FA49 /* Support Files */,
-			);
-			path = UIImageViewAlignedSwift;
-			sourceTree = "<group>";
-		};
-		7246162D7A80468F21512D0B41A5FA49 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				ECD62949FB75E42B3C4B49A074797B80 /* Info.plist */,
-				4E4FC2B4D02F1B20F7D56DB41F35E85C /* UIImageViewAlignedSwift.modulemap */,
-				46DB424267DFACA4D263DAD5DB644DC1 /* UIImageViewAlignedSwift.xcconfig */,
-				DB6191CDA36E4471D3BD1926016F2702 /* UIImageViewAlignedSwift-dummy.m */,
-				6EF7D51CAD2D3A849AB5EC0EF727A715 /* UIImageViewAlignedSwift-prefix.pch */,
-				363281C506939B2610DA857BE5FBB181 /* UIImageViewAlignedSwift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UIImageViewAlignedSwift";
-			sourceTree = "<group>";
-		};
-		79238444F0572C6CAF94EB05F9EB75F7 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				28867A4C7D6A26370E9324DF8DD4BCF7 /* PSPageControl */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				79238444F0572C6CAF94EB05F9EB75F7 /* Development Pods */,
-				EE2FF18CB21F5A19AFB2A27B2273EB36 /* Frameworks */,
-				A11DC78022D8731A556E975ABA5380F4 /* Pods */,
-				1EE61057CF9F5E5C0761E0845D1DCC60 /* Products */,
-				D31B31A22D3D8F8A305E7E314CFEF4EB /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		901057E4EA70807A477F2D2892C95635 /* Pods-PSPageControl_Example */ = {
-			isa = PBXGroup;
-			children = (
-				91AD0E1ED43F074E64CB4FF3C9F854DE /* Info.plist */,
-				70C3AAF419AD1826066FB89E81F20D58 /* Pods-PSPageControl_Example.modulemap */,
-				B57D270C15DB2F54E01A3C1AC44308E7 /* Pods-PSPageControl_Example-acknowledgements.markdown */,
-				D60C6CE0A609E482DB95C48310554FCE /* Pods-PSPageControl_Example-acknowledgements.plist */,
-				88DAC9FAB5718E04055FE8EB283C4100 /* Pods-PSPageControl_Example-dummy.m */,
-				29857E9F64297722F69B6B1E8A4E0410 /* Pods-PSPageControl_Example-frameworks.sh */,
-				B1C5AEBF07F46C80D6DE5AA3E598356C /* Pods-PSPageControl_Example-resources.sh */,
-				9793A5BCF2A60E30129920C7CC4C9986 /* Pods-PSPageControl_Example-umbrella.h */,
-				2BC3DC6F5789E995B602C0E8EE992732 /* Pods-PSPageControl_Example.debug.xcconfig */,
-				E85C951DD3BC2FE7083709361E5B22E1 /* Pods-PSPageControl_Example.release.xcconfig */,
-			);
-			name = "Pods-PSPageControl_Example";
-			path = "Target Support Files/Pods-PSPageControl_Example";
-			sourceTree = "<group>";
-		};
-		950590FAA6033083C4393596B2A5036F /* Pods-PSPageControl_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				9A57CE49C1DCA109E133DDECDC329E7F /* Info.plist */,
-				9EC1E707FB1A4030F43CF7163EA6AED6 /* Pods-PSPageControl_Tests.modulemap */,
-				6BBC1C9DC23185CECC5F4E0F99B97C1C /* Pods-PSPageControl_Tests-acknowledgements.markdown */,
-				33C903B0FDEF2678737412AE2A7C0AD0 /* Pods-PSPageControl_Tests-acknowledgements.plist */,
-				763442DC6829B995F2DB021819332614 /* Pods-PSPageControl_Tests-dummy.m */,
-				399FDD5B0EFEC3F0EAFECB0F619E76A9 /* Pods-PSPageControl_Tests-frameworks.sh */,
-				710665F25D1D03A33891BCF88BB55849 /* Pods-PSPageControl_Tests-resources.sh */,
-				98059E250D33950C61F528B2B8EB96B9 /* Pods-PSPageControl_Tests-umbrella.h */,
-				75CBCEBAC17569BC2F10ADE352D51F97 /* Pods-PSPageControl_Tests.debug.xcconfig */,
-				90EC57AF0A8A54FF3213254D5AC541C3 /* Pods-PSPageControl_Tests.release.xcconfig */,
-			);
-			name = "Pods-PSPageControl_Tests";
-			path = "Target Support Files/Pods-PSPageControl_Tests";
-			sourceTree = "<group>";
-		};
-		A11DC78022D8731A556E975ABA5380F4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6B21C33BA264B127C23D0DC2EF7B80CC /* UIImageViewAlignedSwift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C1128411A250ACF65262CB34381CA69B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				829B1541F4A4186CFC8894128B0DF28D /* Foundation.framework */,
-				ED7761555C06CF53698DF0DF7D7EB8B0 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D31B31A22D3D8F8A305E7E314CFEF4EB /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				901057E4EA70807A477F2D2892C95635 /* Pods-PSPageControl_Example */,
-				950590FAA6033083C4393596B2A5036F /* Pods-PSPageControl_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		EE2FF18CB21F5A19AFB2A27B2273EB36 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CE0C8CF1FF4C7C9A615EF6E885A5B573 /* UIImageViewAlignedSwift.framework */,
-				C1128411A250ACF65262CB34381CA69B /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		2E78FAA8B68DCCD09CC8B6CA1C326AB5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				765BC5CD7E292FF8F4D6FBBCEC71E0C9 /* Pods-PSPageControl_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49CD58C654A6B41E650341D0C1B4DF05 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89230BA47A4CB8BCADDB6A3071C5E129 /* PSPageControl-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E72025CC5138AD4846860112230D778E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD270D15A6417934B53B224FD4B0C40B /* Pods-PSPageControl_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9789EE0A4288919A9E0C9FB446FBD46 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5BC700D67D8C87F82270E93D3E22577 /* UIImageViewAlignedSwift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		0D0C54F9E4D9BC6BB65770FEBF0804EA /* PSPageControl */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 540B49B1BEC5D52A66DB18FE545B06D3 /* Build configuration list for PBXNativeTarget "PSPageControl" */;
-			buildPhases = (
-				824134A636BFB1E7D38CB9E8000CED23 /* Sources */,
-				76DD0D0AF7EAB640A97E7A1AAD080FD6 /* Frameworks */,
-				49CD58C654A6B41E650341D0C1B4DF05 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				39240FF954F021101905AFB8302F8880 /* PBXTargetDependency */,
-			);
-			name = PSPageControl;
-			productName = PSPageControl;
-			productReference = 9AAAEFAF164A572DDA8F1AF44AD06B09 /* PSPageControl.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		66D36FF3B8867965A8271B24E14B3F9A /* UIImageViewAlignedSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3C7895324CC8040D7E4D9698BAD7FF6D /* Build configuration list for PBXNativeTarget "UIImageViewAlignedSwift" */;
-			buildPhases = (
-				7F61A3508937E01E635720B75347E1D7 /* Sources */,
-				D94AEBE546AD7687D9BA1D69AC781DBB /* Frameworks */,
-				E9789EE0A4288919A9E0C9FB446FBD46 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = UIImageViewAlignedSwift;
-			productName = UIImageViewAlignedSwift;
-			productReference = 9338BC17543BBECF990AF6DC7ABAB303 /* UIImageViewAlignedSwift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6EE5DCBA637714E2D67E1AD04508FA09 /* Pods-PSPageControl_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1F03683EB7CE5B7F7E11458D869AF7F4 /* Build configuration list for PBXNativeTarget "Pods-PSPageControl_Tests" */;
-			buildPhases = (
-				E699CF21D5A6D93B78260DC927327ED9 /* Sources */,
-				A876A1CB2A6D50AF164D7994CDD999D0 /* Frameworks */,
-				2E78FAA8B68DCCD09CC8B6CA1C326AB5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				815A208EE722D4A47779CA868EAA4531 /* PBXTargetDependency */,
-				62C03A7695CEFA749142201366C6EC76 /* PBXTargetDependency */,
-			);
-			name = "Pods-PSPageControl_Tests";
-			productName = "Pods-PSPageControl_Tests";
-			productReference = 4C4B40BF9FD14ABA267E9088113C897F /* Pods_PSPageControl_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A586BA112F013838E7BD007D698A03FE /* Pods-PSPageControl_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9EC254DE1F7D3ED8D419E943378369F3 /* Build configuration list for PBXNativeTarget "Pods-PSPageControl_Example" */;
-			buildPhases = (
-				9DDF3DC1B77659FE1660F5E5D27CA020 /* Sources */,
-				574D385CCEB07D43BC1B8587920CCF10 /* Frameworks */,
-				E72025CC5138AD4846860112230D778E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0B98DFCD87A16E403649EDCA50E3B6B8 /* PBXTargetDependency */,
-				A45B983C64F132B8EC4709734A64DC7F /* PBXTargetDependency */,
-			);
-			name = "Pods-PSPageControl_Example";
-			productName = "Pods-PSPageControl_Example";
-			productReference = 5C96272F0C1B30B4D09649964B397AC9 /* Pods_PSPageControl_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1EE61057CF9F5E5C0761E0845D1DCC60 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				A586BA112F013838E7BD007D698A03FE /* Pods-PSPageControl_Example */,
-				6EE5DCBA637714E2D67E1AD04508FA09 /* Pods-PSPageControl_Tests */,
-				0D0C54F9E4D9BC6BB65770FEBF0804EA /* PSPageControl */,
-				66D36FF3B8867965A8271B24E14B3F9A /* UIImageViewAlignedSwift */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		7F61A3508937E01E635720B75347E1D7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				17A86DEC8CBD716AD5D54864F1B43456 /* UIImageViewAligned.swift in Sources */,
-				919574339869B7B5E2CEDBF95B60BCBF /* UIImageViewAlignedSwift-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		824134A636BFB1E7D38CB9E8000CED23 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00EE66745833B186F9A7B5E13D7B556B /* PSPageControl-dummy.m in Sources */,
-				FD2D799353CBB5E20A3583A70AD04B90 /* PSPageControl.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DDF3DC1B77659FE1660F5E5D27CA020 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B2C4692A8F710681B683A0D1662E08EA /* Pods-PSPageControl_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E699CF21D5A6D93B78260DC927327ED9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0B80F05800E1A4A4FF92C7C8CBABE963 /* Pods-PSPageControl_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0B98DFCD87A16E403649EDCA50E3B6B8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PSPageControl;
-			target = 0D0C54F9E4D9BC6BB65770FEBF0804EA /* PSPageControl */;
-			targetProxy = FD50D819EE2865666FA4906047786C5B /* PBXContainerItemProxy */;
-		};
-		39240FF954F021101905AFB8302F8880 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UIImageViewAlignedSwift;
-			target = 66D36FF3B8867965A8271B24E14B3F9A /* UIImageViewAlignedSwift */;
-			targetProxy = C46AD82A98F984C67DBC8614151D11DE /* PBXContainerItemProxy */;
-		};
-		62C03A7695CEFA749142201366C6EC76 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UIImageViewAlignedSwift;
-			target = 66D36FF3B8867965A8271B24E14B3F9A /* UIImageViewAlignedSwift */;
-			targetProxy = 298D6831A7D52D059ACF877186734AAD /* PBXContainerItemProxy */;
-		};
-		815A208EE722D4A47779CA868EAA4531 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PSPageControl;
-			target = 0D0C54F9E4D9BC6BB65770FEBF0804EA /* PSPageControl */;
-			targetProxy = 24B068F68563C8CCB1D62345E1FEED1C /* PBXContainerItemProxy */;
-		};
-		A45B983C64F132B8EC4709734A64DC7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UIImageViewAlignedSwift;
-			target = 66D36FF3B8867965A8271B24E14B3F9A /* UIImageViewAlignedSwift */;
-			targetProxy = 510B2086F96036BA11B425B085551BCD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		01182339F2ACAF6B43A5FB829E7DC79C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E85C951DD3BC2FE7083709361E5B22E1 /* Pods-PSPageControl_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PSPageControl_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PSPageControl_Example/Pods-PSPageControl_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PSPageControl_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		1BF272EB9F9BF442CAFB2722B746430E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75CBCEBAC17569BC2F10ADE352D51F97 /* Pods-PSPageControl_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PSPageControl_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PSPageControl_Tests/Pods-PSPageControl_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PSPageControl_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4E44B7D7E986C7CC818048F3057D43FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46DB424267DFACA4D263DAD5DB644DC1 /* UIImageViewAlignedSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIImageViewAlignedSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UIImageViewAlignedSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		5F65777C01F0A15D947775C035966FE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46DB424267DFACA4D263DAD5DB644DC1 /* UIImageViewAlignedSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIImageViewAlignedSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UIImageViewAlignedSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6A84FCC135051617DFF22C81ED868496 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 930BA680286DADAF354579DF8D0EB2F2 /* PSPageControl.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PSPageControl/PSPageControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PSPageControl/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PSPageControl/PSPageControl.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PSPageControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8DA3D97B1976CBE3EBC67CE62C7627ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BC3DC6F5789E995B602C0E8EE992732 /* Pods-PSPageControl_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PSPageControl_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PSPageControl_Example/Pods-PSPageControl_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PSPageControl_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B0FEB2AD3254F250A468F44386F51FA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 930BA680286DADAF354579DF8D0EB2F2 /* PSPageControl.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PSPageControl/PSPageControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PSPageControl/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PSPageControl/PSPageControl.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PSPageControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E14A21A1341FEB48E8544C7A5D2BC421 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90EC57AF0A8A54FF3213254D5AC541C3 /* Pods-PSPageControl_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PSPageControl_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PSPageControl_Tests/Pods-PSPageControl_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PSPageControl_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		1F03683EB7CE5B7F7E11458D869AF7F4 /* Build configuration list for PBXNativeTarget "Pods-PSPageControl_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BF272EB9F9BF442CAFB2722B746430E /* Debug */,
-				E14A21A1341FEB48E8544C7A5D2BC421 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3C7895324CC8040D7E4D9698BAD7FF6D /* Build configuration list for PBXNativeTarget "UIImageViewAlignedSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4E44B7D7E986C7CC818048F3057D43FF /* Debug */,
-				5F65777C01F0A15D947775C035966FE4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		540B49B1BEC5D52A66DB18FE545B06D3 /* Build configuration list for PBXNativeTarget "PSPageControl" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B0FEB2AD3254F250A468F44386F51FA6 /* Debug */,
-				6A84FCC135051617DFF22C81ED868496 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9EC254DE1F7D3ED8D419E943378369F3 /* Build configuration list for PBXNativeTarget "Pods-PSPageControl_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8DA3D97B1976CBE3EBC67CE62C7627ED /* Debug */,
-				01182339F2ACAF6B43A5FB829E7DC79C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>00EE66745833B186F9A7B5E13D7B556B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>90661CD46487126D5396E99859ECF623</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01182339F2ACAF6B43A5FB829E7DC79C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E85C951DD3BC2FE7083709361E5B22E1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-PSPageControl_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-PSPageControl_Example/Pods-PSPageControl_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_PSPageControl_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>066668544D49FD20830650C69C988E40</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>UIImageViewAligned.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0B80F05800E1A4A4FF92C7C8CBABE963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>763442DC6829B995F2DB021819332614</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0B98DFCD87A16E403649EDCA50E3B6B8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>PSPageControl</string>
+			<key>target</key>
+			<string>0D0C54F9E4D9BC6BB65770FEBF0804EA</string>
+			<key>targetProxy</key>
+			<string>FD50D819EE2865666FA4906047786C5B</string>
+		</dict>
+		<key>0D0C54F9E4D9BC6BB65770FEBF0804EA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>540B49B1BEC5D52A66DB18FE545B06D3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>824134A636BFB1E7D38CB9E8000CED23</string>
+				<string>76DD0D0AF7EAB640A97E7A1AAD080FD6</string>
+				<string>49CD58C654A6B41E650341D0C1B4DF05</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>39240FF954F021101905AFB8302F8880</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PSPageControl</string>
+			<key>productName</key>
+			<string>PSPageControl</string>
+			<key>productReference</key>
+			<string>9AAAEFAF164A572DDA8F1AF44AD06B09</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1627A6B073C47146F67E4A35CA631F9F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>17A86DEC8CBD716AD5D54864F1B43456</key>
+		<dict>
+			<key>fileRef</key>
+			<string>066668544D49FD20830650C69C988E40</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>19AB1997A9C6C878C5B41EAA25ECE742</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>PSPageControl.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1B178CCB80494D6C01AE99B66B076E7D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>829B1541F4A4186CFC8894128B0DF28D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1BF272EB9F9BF442CAFB2722B746430E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>75CBCEBAC17569BC2F10ADE352D51F97</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-PSPageControl_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-PSPageControl_Tests/Pods-PSPageControl_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_PSPageControl_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1DE359C63FD749C37DA7C9ACDF821DAF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>829B1541F4A4186CFC8894128B0DF28D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1EE61057CF9F5E5C0761E0845D1DCC60</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5C96272F0C1B30B4D09649964B397AC9</string>
+				<string>4C4B40BF9FD14ABA267E9088113C897F</string>
+				<string>9AAAEFAF164A572DDA8F1AF44AD06B09</string>
+				<string>9338BC17543BBECF990AF6DC7ABAB303</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F03683EB7CE5B7F7E11458D869AF7F4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1BF272EB9F9BF442CAFB2722B746430E</string>
+				<string>E14A21A1341FEB48E8544C7A5D2BC421</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>24B068F68563C8CCB1D62345E1FEED1C</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>0D0C54F9E4D9BC6BB65770FEBF0804EA</string>
+			<key>remoteInfo</key>
+			<string>PSPageControl</string>
+		</dict>
+		<key>28867A4C7D6A26370E9324DF8DD4BCF7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>19AB1997A9C6C878C5B41EAA25ECE742</string>
+				<string>54CCB839ADD11243CB0A077B2240A65F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>PSPageControl</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29857E9F64297722F69B6B1E8A4E0410</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>298D6831A7D52D059ACF877186734AAD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>66D36FF3B8867965A8271B24E14B3F9A</string>
+			<key>remoteInfo</key>
+			<string>UIImageViewAlignedSwift</string>
+		</dict>
+		<key>2BC3DC6F5789E995B602C0E8EE992732</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>552D02D5BA751AC2E8790D2811D496CA</string>
+				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2E78FAA8B68DCCD09CC8B6CA1C326AB5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>765BC5CD7E292FF8F4D6FBBCEC71E0C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>33C903B0FDEF2678737412AE2A7C0AD0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>363281C506939B2610DA857BE5FBB181</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIImageViewAlignedSwift-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>39240FF954F021101905AFB8302F8880</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>UIImageViewAlignedSwift</string>
+			<key>target</key>
+			<string>66D36FF3B8867965A8271B24E14B3F9A</string>
+			<key>targetProxy</key>
+			<string>C46AD82A98F984C67DBC8614151D11DE</string>
+		</dict>
+		<key>399FDD5B0EFEC3F0EAFECB0F619E76A9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C7895324CC8040D7E4D9698BAD7FF6D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>4E44B7D7E986C7CC818048F3057D43FF</string>
+				<string>5F65777C01F0A15D947775C035966FE4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>413E46B1DF80C25FD2CA1232BACC0EAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE0C8CF1FF4C7C9A615EF6E885A5B573</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>46DB424267DFACA4D263DAD5DB644DC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>UIImageViewAlignedSwift.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>49CD58C654A6B41E650341D0C1B4DF05</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>89230BA47A4CB8BCADDB6A3071C5E129</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4C4B40BF9FD14ABA267E9088113C897F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_PSPageControl_Tests.framework</string>
+			<key>path</key>
+			<string>Pods_PSPageControl_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4E44B7D7E986C7CC818048F3057D43FF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>46DB424267DFACA4D263DAD5DB644DC1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/UIImageViewAlignedSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>UIImageViewAlignedSwift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>4E4FC2B4D02F1B20F7D56DB41F35E85C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>UIImageViewAlignedSwift.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4F6D16BE6CB4531F3DA69C9515F169BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PSPageControl-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>510B2086F96036BA11B425B085551BCD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>66D36FF3B8867965A8271B24E14B3F9A</string>
+			<key>remoteInfo</key>
+			<string>UIImageViewAlignedSwift</string>
+		</dict>
+		<key>540B49B1BEC5D52A66DB18FE545B06D3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B0FEB2AD3254F250A468F44386F51FA6</string>
+				<string>6A84FCC135051617DFF22C81ED868496</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>54CCB839ADD11243CB0A077B2240A65F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1627A6B073C47146F67E4A35CA631F9F</string>
+				<string>F85A1DB706518B876C0E7FBB05FCC2F0</string>
+				<string>930BA680286DADAF354579DF8D0EB2F2</string>
+				<string>90661CD46487126D5396E99859ECF623</string>
+				<string>4F6D16BE6CB4531F3DA69C9515F169BF</string>
+				<string>79C555206376328BC8ED9E9923C4FFEE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/PSPageControl</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>552D02D5BA751AC2E8790D2811D496CA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>574D385CCEB07D43BC1B8587920CCF10</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E4AB42B680F259D9DCD77BEC9D88847A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5C96272F0C1B30B4D09649964B397AC9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_PSPageControl_Example.framework</string>
+			<key>path</key>
+			<string>Pods_PSPageControl_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5F65777C01F0A15D947775C035966FE4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>46DB424267DFACA4D263DAD5DB644DC1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/UIImageViewAlignedSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>UIImageViewAlignedSwift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>62C03A7695CEFA749142201366C6EC76</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>UIImageViewAlignedSwift</string>
+			<key>target</key>
+			<string>66D36FF3B8867965A8271B24E14B3F9A</string>
+			<key>targetProxy</key>
+			<string>298D6831A7D52D059ACF877186734AAD</string>
+		</dict>
+		<key>66D36FF3B8867965A8271B24E14B3F9A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3C7895324CC8040D7E4D9698BAD7FF6D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7F61A3508937E01E635720B75347E1D7</string>
+				<string>D94AEBE546AD7687D9BA1D69AC781DBB</string>
+				<string>E9789EE0A4288919A9E0C9FB446FBD46</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>UIImageViewAlignedSwift</string>
+			<key>productName</key>
+			<string>UIImageViewAlignedSwift</string>
+			<key>productReference</key>
+			<string>9338BC17543BBECF990AF6DC7ABAB303</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>6A84FCC135051617DFF22C81ED868496</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>930BA680286DADAF354579DF8D0EB2F2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/PSPageControl/PSPageControl-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/PSPageControl/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/PSPageControl/PSPageControl.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>PSPageControl</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6B21C33BA264B127C23D0DC2EF7B80CC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>066668544D49FD20830650C69C988E40</string>
+				<string>7246162D7A80468F21512D0B41A5FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>UIImageViewAlignedSwift</string>
+			<key>path</key>
+			<string>UIImageViewAlignedSwift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6BBC1C9DC23185CECC5F4E0F99B97C1C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6EE5DCBA637714E2D67E1AD04508FA09</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>1F03683EB7CE5B7F7E11458D869AF7F4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E699CF21D5A6D93B78260DC927327ED9</string>
+				<string>A876A1CB2A6D50AF164D7994CDD999D0</string>
+				<string>2E78FAA8B68DCCD09CC8B6CA1C326AB5</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>815A208EE722D4A47779CA868EAA4531</string>
+				<string>62C03A7695CEFA749142201366C6EC76</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-PSPageControl_Tests</string>
+			<key>productName</key>
+			<string>Pods-PSPageControl_Tests</string>
+			<key>productReference</key>
+			<string>4C4B40BF9FD14ABA267E9088113C897F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>6EF7D51CAD2D3A849AB5EC0EF727A715</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIImageViewAlignedSwift-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>70C3AAF419AD1826066FB89E81F20D58</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Example.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>710665F25D1D03A33891BCF88BB55849</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7246162D7A80468F21512D0B41A5FA49</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ECD62949FB75E42B3C4B49A074797B80</string>
+				<string>4E4FC2B4D02F1B20F7D56DB41F35E85C</string>
+				<string>46DB424267DFACA4D263DAD5DB644DC1</string>
+				<string>DB6191CDA36E4471D3BD1926016F2702</string>
+				<string>6EF7D51CAD2D3A849AB5EC0EF727A715</string>
+				<string>363281C506939B2610DA857BE5FBB181</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/UIImageViewAlignedSwift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75CBCEBAC17569BC2F10ADE352D51F97</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>763442DC6829B995F2DB021819332614</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>765BC5CD7E292FF8F4D6FBBCEC71E0C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>98059E250D33950C61F528B2B8EB96B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>76DD0D0AF7EAB640A97E7A1AAD080FD6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1DE359C63FD749C37DA7C9ACDF821DAF</string>
+				<string>413E46B1DF80C25FD2CA1232BACC0EAD</string>
+				<string>DC2E4896991C28397140BC6090242DAB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>79238444F0572C6CAF94EB05F9EB75F7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>28867A4C7D6A26370E9324DF8DD4BCF7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79C555206376328BC8ED9E9923C4FFEE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PSPageControl-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79F5A96CEBB2F413BDD66F44AF40B79C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>829B1541F4A4186CFC8894128B0DF28D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>79238444F0572C6CAF94EB05F9EB75F7</string>
+				<string>EE2FF18CB21F5A19AFB2A27B2273EB36</string>
+				<string>A11DC78022D8731A556E975ABA5380F4</string>
+				<string>1EE61057CF9F5E5C0761E0845D1DCC60</string>
+				<string>D31B31A22D3D8F8A305E7E314CFEF4EB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F61A3508937E01E635720B75347E1D7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>17A86DEC8CBD716AD5D54864F1B43456</string>
+				<string>919574339869B7B5E2CEDBF95B60BCBF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>815A208EE722D4A47779CA868EAA4531</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>PSPageControl</string>
+			<key>target</key>
+			<string>0D0C54F9E4D9BC6BB65770FEBF0804EA</string>
+			<key>targetProxy</key>
+			<string>24B068F68563C8CCB1D62345E1FEED1C</string>
+		</dict>
+		<key>824134A636BFB1E7D38CB9E8000CED23</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>00EE66745833B186F9A7B5E13D7B556B</string>
+				<string>FD2D799353CBB5E20A3583A70AD04B90</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>829B1541F4A4186CFC8894128B0DF28D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>88DAC9FAB5718E04055FE8EB283C4100</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>89230BA47A4CB8BCADDB6A3071C5E129</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79C555206376328BC8ED9E9923C4FFEE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8DA3D97B1976CBE3EBC67CE62C7627ED</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2BC3DC6F5789E995B602C0E8EE992732</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-PSPageControl_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-PSPageControl_Example/Pods-PSPageControl_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_PSPageControl_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>901057E4EA70807A477F2D2892C95635</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>91AD0E1ED43F074E64CB4FF3C9F854DE</string>
+				<string>70C3AAF419AD1826066FB89E81F20D58</string>
+				<string>B57D270C15DB2F54E01A3C1AC44308E7</string>
+				<string>D60C6CE0A609E482DB95C48310554FCE</string>
+				<string>88DAC9FAB5718E04055FE8EB283C4100</string>
+				<string>29857E9F64297722F69B6B1E8A4E0410</string>
+				<string>B1C5AEBF07F46C80D6DE5AA3E598356C</string>
+				<string>9793A5BCF2A60E30129920C7CC4C9986</string>
+				<string>2BC3DC6F5789E995B602C0E8EE992732</string>
+				<string>E85C951DD3BC2FE7083709361E5B22E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-PSPageControl_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-PSPageControl_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>90661CD46487126D5396E99859ECF623</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PSPageControl-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>90EC57AF0A8A54FF3213254D5AC541C3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>919574339869B7B5E2CEDBF95B60BCBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DB6191CDA36E4471D3BD1926016F2702</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>91AD0E1ED43F074E64CB4FF3C9F854DE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>930BA680286DADAF354579DF8D0EB2F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>PSPageControl.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9338BC17543BBECF990AF6DC7ABAB303</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>UIImageViewAlignedSwift.framework</string>
+			<key>path</key>
+			<string>UIImageViewAlignedSwift.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>950590FAA6033083C4393596B2A5036F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9A57CE49C1DCA109E133DDECDC329E7F</string>
+				<string>9EC1E707FB1A4030F43CF7163EA6AED6</string>
+				<string>6BBC1C9DC23185CECC5F4E0F99B97C1C</string>
+				<string>33C903B0FDEF2678737412AE2A7C0AD0</string>
+				<string>763442DC6829B995F2DB021819332614</string>
+				<string>399FDD5B0EFEC3F0EAFECB0F619E76A9</string>
+				<string>710665F25D1D03A33891BCF88BB55849</string>
+				<string>98059E250D33950C61F528B2B8EB96B9</string>
+				<string>75CBCEBAC17569BC2F10ADE352D51F97</string>
+				<string>90EC57AF0A8A54FF3213254D5AC541C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-PSPageControl_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-PSPageControl_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9793A5BCF2A60E30129920C7CC4C9986</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Example-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>98059E250D33950C61F528B2B8EB96B9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Tests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9A57CE49C1DCA109E133DDECDC329E7F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9AAAEFAF164A572DDA8F1AF44AD06B09</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>PSPageControl.framework</string>
+			<key>path</key>
+			<string>PSPageControl.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9DDF3DC1B77659FE1660F5E5D27CA020</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B2C4692A8F710681B683A0D1662E08EA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9EC1E707FB1A4030F43CF7163EA6AED6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Tests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EC254DE1F7D3ED8D419E943378369F3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>8DA3D97B1976CBE3EBC67CE62C7627ED</string>
+				<string>01182339F2ACAF6B43A5FB829E7DC79C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>A11DC78022D8731A556E975ABA5380F4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6B21C33BA264B127C23D0DC2EF7B80CC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A45B983C64F132B8EC4709734A64DC7F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>UIImageViewAlignedSwift</string>
+			<key>target</key>
+			<string>66D36FF3B8867965A8271B24E14B3F9A</string>
+			<key>targetProxy</key>
+			<string>510B2086F96036BA11B425B085551BCD</string>
+		</dict>
+		<key>A586BA112F013838E7BD007D698A03FE</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9EC254DE1F7D3ED8D419E943378369F3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9DDF3DC1B77659FE1660F5E5D27CA020</string>
+				<string>574D385CCEB07D43BC1B8587920CCF10</string>
+				<string>E72025CC5138AD4846860112230D778E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>0B98DFCD87A16E403649EDCA50E3B6B8</string>
+				<string>A45B983C64F132B8EC4709734A64DC7F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-PSPageControl_Example</string>
+			<key>productName</key>
+			<string>Pods-PSPageControl_Example</string>
+			<key>productReference</key>
+			<string>5C96272F0C1B30B4D09649964B397AC9</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>A876A1CB2A6D50AF164D7994CDD999D0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>79F5A96CEBB2F413BDD66F44AF40B79C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B0FEB2AD3254F250A468F44386F51FA6</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>930BA680286DADAF354579DF8D0EB2F2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/PSPageControl/PSPageControl-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/PSPageControl/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/PSPageControl/PSPageControl.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>PSPageControl</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B1C5AEBF07F46C80D6DE5AA3E598356C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2C4692A8F710681B683A0D1662E08EA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88DAC9FAB5718E04055FE8EB283C4100</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B57D270C15DB2F54E01A3C1AC44308E7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>C1128411A250ACF65262CB34381CA69B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>829B1541F4A4186CFC8894128B0DF28D</string>
+				<string>ED7761555C06CF53698DF0DF7D7EB8B0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C46AD82A98F984C67DBC8614151D11DE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>66D36FF3B8867965A8271B24E14B3F9A</string>
+			<key>remoteInfo</key>
+			<string>UIImageViewAlignedSwift</string>
+		</dict>
+		<key>CE0C8CF1FF4C7C9A615EF6E885A5B573</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>UIImageViewAlignedSwift.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D31B31A22D3D8F8A305E7E314CFEF4EB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>901057E4EA70807A477F2D2892C95635</string>
+				<string>950590FAA6033083C4393596B2A5036F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>1EE61057CF9F5E5C0761E0845D1DCC60</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>A586BA112F013838E7BD007D698A03FE</string>
+				<string>6EE5DCBA637714E2D67E1AD04508FA09</string>
+				<string>0D0C54F9E4D9BC6BB65770FEBF0804EA</string>
+				<string>66D36FF3B8867965A8271B24E14B3F9A</string>
+			</array>
+		</dict>
+		<key>D5BC700D67D8C87F82270E93D3E22577</key>
+		<dict>
+			<key>fileRef</key>
+			<string>363281C506939B2610DA857BE5FBB181</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D60C6CE0A609E482DB95C48310554FCE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D94AEBE546AD7687D9BA1D69AC781DBB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1B178CCB80494D6C01AE99B66B076E7D</string>
+				<string>F93698E79A01244CD0B5F17FC7961A7F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DB6191CDA36E4471D3BD1926016F2702</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIImageViewAlignedSwift-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DC2E4896991C28397140BC6090242DAB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED7761555C06CF53698DF0DF7D7EB8B0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E14A21A1341FEB48E8544C7A5D2BC421</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>90EC57AF0A8A54FF3213254D5AC541C3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-PSPageControl_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-PSPageControl_Tests/Pods-PSPageControl_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_PSPageControl_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E4AB42B680F259D9DCD77BEC9D88847A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>829B1541F4A4186CFC8894128B0DF28D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E699CF21D5A6D93B78260DC927327ED9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0B80F05800E1A4A4FF92C7C8CBABE963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E72025CC5138AD4846860112230D778E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FD270D15A6417934B53B224FD4B0C40B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E85C951DD3BC2FE7083709361E5B22E1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-PSPageControl_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E9789EE0A4288919A9E0C9FB446FBD46</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D5BC700D67D8C87F82270E93D3E22577</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ECD62949FB75E42B3C4B49A074797B80</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED7761555C06CF53698DF0DF7D7EB8B0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>EE2FF18CB21F5A19AFB2A27B2273EB36</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE0C8CF1FF4C7C9A615EF6E885A5B573</string>
+				<string>C1128411A250ACF65262CB34381CA69B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F85A1DB706518B876C0E7FBB05FCC2F0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>PSPageControl.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F93698E79A01244CD0B5F17FC7961A7F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ED7761555C06CF53698DF0DF7D7EB8B0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FD270D15A6417934B53B224FD4B0C40B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9793A5BCF2A60E30129920C7CC4C9986</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FD2D799353CBB5E20A3583A70AD04B90</key>
+		<dict>
+			<key>fileRef</key>
+			<string>19AB1997A9C6C878C5B41EAA25ECE742</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FD50D819EE2865666FA4906047786C5B</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>0D0C54F9E4D9BC6BB65770FEBF0804EA</string>
+			<key>remoteInfo</key>
+			<string>PSPageControl</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

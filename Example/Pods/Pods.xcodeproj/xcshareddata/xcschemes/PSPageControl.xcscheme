@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '89EC6CA12A9329AD92778DAA'
+               BlueprintIdentifier = '8E1E20826815931B7128154C'
                BlueprintName = 'PSPageControl'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PSPageControl.framework'>
