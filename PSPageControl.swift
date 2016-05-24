@@ -35,13 +35,13 @@ public class PSPageControl: UIView {
      */
     public var views: [UIView]? {
         didSet {
-            subviews.forEach { subview in
-                if !subviewsNotAllowedToRemoveFromSuperview.contains(subview) {
-                    subview.removeFromSuperview()
-                }
+            subviews.filter( { !subviewsNotAllowedToRemoveFromSuperview.contains($0) } ).forEach {
+                $0.removeFromSuperview()
             }
             
-            for (index, view) in views!.enumerate() {
+            guard let views = views else { pageControl.numberOfPages = 0; return }
+            
+            for (index, view) in views.enumerate() {
                 view.frame = CGRect(x: CGFloat(index) * frame.width,
                     y: 0.0,
                     width: frame.width,
@@ -49,7 +49,7 @@ public class PSPageControl: UIView {
                 addSubview(view)
             }
             
-            pageControl.numberOfPages = views!.count
+            pageControl.numberOfPages = views.count
         }
     }
     
@@ -110,7 +110,6 @@ public class PSPageControl: UIView {
         addSubview(background)
         
         // Page control
-        pageControl.addTarget(self, action: "pageControlValueChanged:", forControlEvents: .ValueChanged)
         addSubview(pageControl)
         
         // Array of views not allowed to remove from superview
@@ -239,5 +238,4 @@ public class PSPageControl: UIView {
             showViewWithIndex(currentViewIndex, setCurrentPage: false)
         }
     }
-    
 }

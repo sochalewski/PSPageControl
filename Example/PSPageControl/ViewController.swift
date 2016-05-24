@@ -59,5 +59,4 @@ class ViewController: UIViewController {
         
         pageControl.views = views
     }
-
 }
