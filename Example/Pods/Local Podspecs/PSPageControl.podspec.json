@@ -1,6 +1,6 @@
 {
   "name": "PSPageControl",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "summary": "Easy parallax effect in UIPageControl",
   "description": "Easy parallax effect in UIPageControl in Swift.",
   "homepage": "https://github.com/sochalewski/PSPageControl",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/sochalewski/PSPageControl.git",
-    "tag": "0.1.1"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

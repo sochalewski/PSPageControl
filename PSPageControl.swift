@@ -10,19 +10,19 @@ import AVFoundation
 import UIKit
 import UIImageViewAlignedSwift
 
-public class PSPageControl: UIView {
+open class PSPageControl: UIView {
     
     /**
      The image shown in the background. It should be horizontal with proper ratio and high resolution.
      */
-    public var backgroundPicture: UIImage? {
+    open var backgroundPicture: UIImage? {
         didSet {
             guard let backgroundPicture = backgroundPicture else { return }
             
-            let size = AVMakeRectWithAspectRatioInsideRect(backgroundPicture.size,
-                CGRect(x: 0.0, y: 0.0, width: CGFloat.max, height: frame.height)).size
+            let size = AVMakeRect(aspectRatio: backgroundPicture.size,
+                                  insideRect: CGRect(x: 0.0, y: 0.0, width: CGFloat.greatestFiniteMagnitude, height: frame.height)).size
             UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-            backgroundPicture.drawInRect(CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height))
+            backgroundPicture.draw(in: CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height))
             let image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             
@@ -33,7 +33,7 @@ public class PSPageControl: UIView {
     /**
      The array of `UIView`s to be shown by page control.
      */
-    public var views: [UIView]? {
+    open var views: [UIView]? {
         didSet {
             subviews.filter( { !subviewsNotAllowedToRemoveFromSuperview.contains($0) } ).forEach {
                 $0.removeFromSuperview()
@@ -41,7 +41,7 @@ public class PSPageControl: UIView {
             
             guard let views = views else { pageControl.numberOfPages = 0; return }
             
-            for (index, view) in views.enumerate() {
+            for (index, view) in views.enumerated() {
                 view.frame = CGRect(x: CGFloat(index) * frame.width,
                     y: 0.0,
                     width: frame.width,
@@ -56,12 +56,12 @@ public class PSPageControl: UIView {
     /**
      Offset per page in pixels. Default is `40`.
      */
-    public var offsetPerPage: UInt = 40
+    open var offsetPerPage: UInt = 40
     
     /**
      The tint color to be used for the page indicator.
      */
-    public var pageIndicatorTintColor: UIColor? {
+    open var pageIndicatorTintColor: UIColor? {
         set {
             pageControl.pageIndicatorTintColor = newValue
         }
@@ -73,7 +73,7 @@ public class PSPageControl: UIView {
     /**
      The tint color to be used for the current page indicator.
      */
-    public var currentPageIndicatorTintColor: UIColor? {
+    open var currentPageIndicatorTintColor: UIColor? {
         set {
             pageControl.currentPageIndicatorTintColor = newValue
         }
@@ -87,7 +87,7 @@ public class PSPageControl: UIView {
      
      Changes to this property can be animated.
      */
-    public var pageIndicatorFrame: CGRect {
+    open var pageIndicatorFrame: CGRect {
         get {
             return pageControl.frame
         }
@@ -96,17 +96,17 @@ public class PSPageControl: UIView {
         }
     }
     
-    private var subviewsNotAllowedToRemoveFromSuperview = [UIView]()
-    private var background = UIImageViewAligned()
-    private var pageControl = UIPageControl()
-    private var touchPosition: CGPoint?
-    private var currentViewIndex: Int = 0
-    private var backgroundLayerFrameOrigin: CGPoint?
+    fileprivate var subviewsNotAllowedToRemoveFromSuperview = [UIView]()
+    fileprivate var background = UIImageViewAligned()
+    fileprivate var pageControl = UIPageControl()
+    fileprivate var touchPosition: CGPoint?
+    fileprivate var currentViewIndex = 0
+    fileprivate var backgroundLayerFrameOrigin: CGPoint?
     
-    private func setup() {
+    fileprivate func setup() {
         // Background image
-        background.contentMode = .ScaleAspectFill
-        background.alignment = .Left
+        background.contentMode = .scaleAspectFill
+        background.alignment = .left
         addSubview(background)
         
         // Page control
@@ -126,15 +126,12 @@ public class PSPageControl: UIView {
         setup()
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         // Background image
         background.frame = frame
-        background.layer.frame = CGRect(x: -CGFloat(offsetPerPage),
-            y: 0.0,
-            width: background.layer.frame.width,
-            height: background.layer.frame.height)
+        background.layer.frame = CGRect(x: -CGFloat(offsetPerPage), y: 0.0, width: background.layer.frame.width, height: background.layer.frame.height)
         backgroundLayerFrameOrigin = background.layer.frame.origin
         
         // Page control
@@ -143,7 +140,7 @@ public class PSPageControl: UIView {
     
     // MARK: - Views
     
-    private func showViewWithIndex(index: Int, setCurrentPage currentPage: Bool) {
+    fileprivate func showView(withIndex index: Int, setCurrentPage currentPage: Bool) {
         // Background image
         if index != currentViewIndex {
             let sign: CGFloat = (index > currentViewIndex) ? -1 : 1 // plus or minus for newX
@@ -152,90 +149,82 @@ public class PSPageControl: UIView {
         }
         
         let duration = (index == currentViewIndex) ? 0.3 : 0.2
-        UIView.animateWithDuration(duration) {
+        UIView.animate(withDuration: duration) {
             self.background.layer.frame = CGRect(x: self.backgroundLayerFrameOrigin!.x,
-                y: 0.0,
-                width: self.background.layer.frame.width,
-                height: self.background.layer.frame.height)
+                                                 y: 0.0,
+                                                 width: self.background.layer.frame.width,
+                                                 height: self.background.layer.frame.height)
         }
         
         // Views
-        UIView.animateWithDuration(0.2,
-            animations: {
-                // Center (show) view with current index
-                let view = self.views![index]
-                view.frame = CGRect(x: 0.0, y: 0.0, width: self.frame.width, height: self.frame.height)
+        UIView.animate(withDuration: 0.2, animations: {
+            // Center (show) view with current index
+            let view = self.views![index]
+            view.frame = CGRect(x: 0.0, y: 0.0, width: self.frame.width, height: self.frame.height)
+            
+            // Move to the left views with index lower than >index<
+            // and to the right views with index higher than >index<
+            for (i, view) in self.views!.enumerated() {
+                let newX: CGFloat
+                switch i {
+                case let x where x < index:
+                    newX = CGFloat(-(index - i)) * self.frame.width
+                case let x where x > index:
+                    newX = CGFloat(i - index) * self.frame.width
+                default:
+                    newX = 0.0
+                }
                 
-                // Move to the left views with index lower than >index<
-                // and to the right views with index higher than >index<
-                for (i, view) in self.views!.enumerate() {
-                    let newX: CGFloat
-                    switch i {
-                    case let x where x < index:
-                        newX = CGFloat(-(index - i)) * self.frame.width
-                    case let x where x > index:
-                        newX = CGFloat(i - index) * self.frame.width
-                    default:
-                        newX = 0.0
-                    }
-                    
-                    view.frame.origin = CGPoint(x: newX, y: 0.0)
-                }
-            },
-            completion: { _ in
-                if currentPage {
-                    self.pageControl.currentPage = index
-                }
-                self.currentViewIndex = index
+                view.frame.origin = CGPoint(x: newX, y: 0.0)
             }
-        )
+        }) {  _ in
+            if currentPage {
+                self.pageControl.currentPage = index
+            }
+            self.currentViewIndex = index
+        }
     }
     
     // MARK: - Touches
     
-    private func differenceFromTouches(touches: Set<UITouch>) -> Int {
-        let movingPosition = touches.first?.locationInView(self)
+    fileprivate func difference(fromTouches touches: Set<UITouch>) -> Int {
+        let movingPosition = touches.first?.location(in: self)
         
         return Int(movingPosition!.x - touchPosition!.x)
     }
     
-    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesBegan(touches, withEvent: event)
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         
-        touchPosition = touches.first?.locationInView(self)
+        touchPosition = touches.first?.location(in: self)
     }
     
-    public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesMoved(touches, withEvent: event)
+    open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
         
-        let differenceInTouchXAxis = differenceFromTouches(touches)
+        let differenceInTouchXAxis = difference(fromTouches: touches)
         
-        UIView.animateWithDuration(0.1) {
-            for (index, view) in self.views!.enumerate() {
-                view.frame = CGRect(x: CGFloat(index - self.currentViewIndex) * view.frame.width + CGFloat(differenceInTouchXAxis),
-                    y: 0.0,
-                    width: self.background.layer.frame.width,
-                    height: self.background.layer.frame.height)
+        UIView.animate(withDuration: 0.1) {
+            for (index, view) in self.views!.enumerated() {
+                view.frame = CGRect(x: CGFloat(index - self.currentViewIndex) * view.frame.width + CGFloat(differenceInTouchXAxis), y: 0.0,
+                    width: self.background.layer.frame.width, height: self.background.layer.frame.height)
             }
-            self.background.layer.frame = CGRect(x: self.backgroundLayerFrameOrigin!.x + (CGFloat(differenceInTouchXAxis) / self.frame.width) * CGFloat(self.offsetPerPage),
-                y: 0.0,
-                width: self.background.layer.frame.width,
-                height: self.background.layer.frame.height)
+            self.background.layer.frame = CGRect(x: self.backgroundLayerFrameOrigin!.x + (CGFloat(differenceInTouchXAxis) / self.frame.width) * CGFloat(self.offsetPerPage), y: 0.0, width: self.background.layer.frame.width, height: self.background.layer.frame.height)
         }
     }
     
-    public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesEnded(touches, withEvent: event)
+    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
         
-        let differenceInTouchXAxis = differenceFromTouches(touches)
+        let differenceInTouchXAxis = difference(fromTouches: touches)
         
         switch differenceInTouchXAxis {
         case let x where x < -100:
-            showViewWithIndex(currentViewIndex + 1 >= views!.count ? currentViewIndex : currentViewIndex + 1, setCurrentPage: true)
+            showView(withIndex: currentViewIndex + 1 >= views!.count ? currentViewIndex : currentViewIndex + 1, setCurrentPage: true)
         case let x where x > 100:
-            showViewWithIndex(currentViewIndex < 1 ? currentViewIndex : currentViewIndex - 1, setCurrentPage: true)
+            showView(withIndex: currentViewIndex < 1 ? currentViewIndex : currentViewIndex - 1, setCurrentPage: true)
         default:
-            showViewWithIndex(currentViewIndex, setCurrentPage: false)
+            showView(withIndex: currentViewIndex, setCurrentPage: false)
         }
     }
 }

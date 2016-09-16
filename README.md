@@ -10,7 +10,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-Swift 2.x, iOS 8+
+Swift 3, iOS 8+
 
 ## Installation
 
@@ -46,13 +46,10 @@ override func viewDidLoad() {
     for index in 1...5 {
         let view = UIView(frame: self.view.frame)
 
-        let label = UILabel(frame: CGRect(x: self.view.frame.width / 2.0 - 60.0,
-            y: 40.0,
-            width: 120.0,
-            height: 30.0))
-        label.textColor = .whiteColor()
+        let label = UILabel(frame: CGRect(x: self.view.frame.width / 2.0 - 60.0, y: 40.0, width: 120.0, height: 30.0))
+        label.textColor = .white
         label.font = UIFont(name: "HelveticaNeue-Bold", size: 24.0)
-        label.textAlignment = .Center
+        label.textAlignment = .center
         label.text = "View #\(index)"
 
         view.addSubview(label)
@@ -60,7 +57,7 @@ override func viewDidLoad() {
         views.append(view)
     }
 
-    self.pageControlView.views = views
+    pageControlView.views = views
 }
 ```
 
@@ -85,24 +82,21 @@ override func viewDidLoad() {
     for index in 1...5 {
         let view = UIView(frame: self.view.frame)
 
-        let label = UILabel(frame: CGRect(x: self.view.frame.width / 2.0 - 60.0,
-            y: 40.0,
-            width: 120.0,
-            height: 30.0))
-        label.textColor = .whiteColor()
+        let label = UILabel(frame: CGRect(x: self.view.frame.width / 2.0 - 60.0, y: 40.0, width: 120.0, height: 30.0))
+        label.textColor = .white
         label.font = UIFont(name: "HelveticaNeue-Bold", size: 24.0)
-        label.textAlignment = .Center
+        label.textAlignment = .center
         label.text = "View #\(index)"
 
         let description = UILabel(frame: CGRect(x: 30.0,
             y: 80.0,
             width: self.view.frame.width - 60.0,
             height: self.view.frame.height - 100.0))
-        description.lineBreakMode = .ByWordWrapping
+        description.lineBreakMode = .byWordWrapping
         description.numberOfLines = 0
-        description.textColor = .whiteColor()
+        description.textColor = .white
         description.font = UIFont(name: "HelveticaNeue-Light", size: 20.0)
-        description.textAlignment = .Center
+        description.textAlignment = .center
         description.text = loremIpsum[index - 1]
 
         view.addSubview(label)
@@ -126,7 +120,7 @@ override func viewDidLoad() {
 
 ## Author
 
-Piotr Sochalewski, sochalewski@gmail.com
+Piotr Sochalewski, <a href="http://sochalewski.github.io">sochalewski.github.io</a>
 
 ## License
 

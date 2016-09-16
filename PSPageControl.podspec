@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PSPageControl"
-  s.version          = "0.1.1"
+  s.version          = "0.2.0"
   s.summary          = "Easy parallax effect in UIPageControl"
   s.description      = "Easy parallax effect in UIPageControl in Swift."
   s.homepage         = "https://github.com/sochalewski/PSPageControl"
