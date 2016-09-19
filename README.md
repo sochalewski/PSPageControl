@@ -33,7 +33,7 @@ First at all import library to your view controller.
 import PSPageControl
 ```
 
-Then add `UIView` in your storyboard/xib (or create view programmatically), change its class to `PSPageControl` and drag and drop to create `IBOutlet`. Next add proper code to your `viewDidLoad` or another place where you need it.
+Then add a `UIView` in your storyboard/xib (or create view programmatically), change its class to `PSPageControl` and drag and drop to create an `IBOutlet`. Next add proper code to your `viewDidLoad` or another place where you need it.
 ```swift
 override func viewDidLoad() {
     super.viewDidLoad()
@@ -88,10 +88,7 @@ override func viewDidLoad() {
         label.textAlignment = .center
         label.text = "View #\(index)"
 
-        let description = UILabel(frame: CGRect(x: 30.0,
-            y: 80.0,
-            width: self.view.frame.width - 60.0,
-            height: self.view.frame.height - 100.0))
+        let description = UILabel(frame: CGRect(x: 30.0, y: 80.0, width: self.view.frame.width - 60.0, height: self.view.frame.height - 100.0))
         description.lineBreakMode = .byWordWrapping
         description.numberOfLines = 0
         description.textColor = .white
@@ -113,10 +110,10 @@ override func viewDidLoad() {
 **PSPageControl** has a few variables that let you configure the library.
 
 * `backgroundPicture` is an image shown in the background. Remember that it should be horizontal with proper ratio and high resolution.
-* `views` is array of `UIView`s to be shown by page control.
-* `offsetPerPage` is offset used swipe by swipe from one to another view. Default is `40`.
-* `pageIndicatorTintColor` is `UIColor` used by inactive page control indicator.
-* `currentPageIndicatorTintColor` is `UIColor` used by active page control indicator.
+* `views` is an array of `UIView`s to be shown by page control.
+* `offsetPerPage` is an offset used swipe by swipe from one to another view. Default is `40`.
+* `pageIndicatorTintColor` is a `UIColor` used by inactive page control indicator.
+* `currentPageIndicatorTintColor` is a `UIColor` used by active page control indicator.
 
 ## Author
 
