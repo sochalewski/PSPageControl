@@ -131,7 +131,7 @@ open class PSPageControl: UIView {
         
         // Background image
         background.frame = frame
-        background.layer.frame = CGRect(x: -CGFloat(offsetPerPage), y: 0.0, width: background.layer.frame.width, height: background.layer.frame.height)
+        background.layer.frame = CGRect(x: CGFloat(-currentViewIndex - 1) * CGFloat(offsetPerPage), y: 0.0, width: background.layer.frame.width, height: background.layer.frame.height)
         backgroundLayerFrameOrigin = background.layer.frame.origin
         
         // Page control
@@ -140,15 +140,30 @@ open class PSPageControl: UIView {
     
     // MARK: - Views
     
+    /**
+     Shows a view with a given index.
+     
+     - parameter index: The index of page that should be shown by the receiver as a white dot. The property value is an integer specifying a page shown minus one; thus a value of indicates the first page. Values outside the possible range are pinned to either 0 or numberOfPages minus 1.
+     - returns: A Boolean value that determines whether the function finished with success.
+     */
+    public func showView(withIndex index: Int) -> Bool {
+        if let views = views, index < views.count, index >= 0 {
+            showView(withIndex: index, setCurrentPage: true)
+            return true
+        } else {
+            return false
+        }
+    }
+    
     fileprivate func showView(withIndex index: Int, setCurrentPage currentPage: Bool) {
         // Background image
         if index != currentViewIndex {
-            let sign: CGFloat = (index > currentViewIndex) ? -1 : 1 // plus or minus for newX
-            let newX = backgroundLayerFrameOrigin!.x + sign * CGFloat(offsetPerPage)
+            let newX = CGFloat(-index - 1) * CGFloat(offsetPerPage)
             backgroundLayerFrameOrigin = CGPoint(x: newX, y: 0.0)
         }
         
         let duration = (index == currentViewIndex) ? 0.3 : 0.2
+        currentViewIndex = index
         UIView.animate(withDuration: duration) {
             self.background.layer.frame = CGRect(x: self.backgroundLayerFrameOrigin!.x,
                                                  y: 0.0,
@@ -181,7 +196,6 @@ open class PSPageControl: UIView {
             if currentPage {
                 self.pageControl.currentPage = index
             }
-            self.currentViewIndex = index
         }
     }
     
@@ -209,7 +223,9 @@ open class PSPageControl: UIView {
                 view.frame = CGRect(x: CGFloat(index - self.currentViewIndex) * view.frame.width + CGFloat(differenceInTouchXAxis), y: 0.0,
                     width: self.background.layer.frame.width, height: self.background.layer.frame.height)
             }
-            self.background.layer.frame = CGRect(x: self.backgroundLayerFrameOrigin!.x + (CGFloat(differenceInTouchXAxis) / self.frame.width) * CGFloat(self.offsetPerPage), y: 0.0, width: self.background.layer.frame.width, height: self.background.layer.frame.height)
+            let x = CGFloat(-self.currentViewIndex - 1) * CGFloat(self.offsetPerPage)
+            let deltaX = (CGFloat(differenceInTouchXAxis) / self.frame.width) * CGFloat(self.offsetPerPage)
+            self.background.layer.frame = CGRect(x: x + deltaX, y: 0.0, width: self.background.layer.frame.width, height: self.background.layer.frame.height)
         }
     }
     
