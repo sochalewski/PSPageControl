@@ -10,6 +10,13 @@ import AVFoundation
 import UIKit
 import UIImageViewAlignedSwift
 
+/**
+ Event to detect when PSPageControl was changed
+ */
+public protocol PSPageControlProtocol {
+    func didChange(index: Int)
+}
+
 open class PSPageControl: UIView {
     
     /**
@@ -100,8 +107,20 @@ open class PSPageControl: UIView {
     fileprivate var background = UIImageViewAligned()
     fileprivate var pageControl = UIPageControl()
     fileprivate var touchPosition: CGPoint?
-    fileprivate var currentViewIndex = 0
     fileprivate var backgroundLayerFrameOrigin: CGPoint?
+    
+    /// Delegate to detect when current PSPageControl changed
+    open var delegate: PSPageControlProtocol?
+
+    /**
+         Get current PSPageViewControl
+     */
+    open var currentViewIndex = 0 {
+        didSet {
+            delegate?.didChange(index: currentViewIndex)
+        }
+    }
+    
     
     fileprivate func setup() {
         // Background image
