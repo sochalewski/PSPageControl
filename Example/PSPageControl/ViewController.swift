@@ -9,6 +9,7 @@
 import UIKit
 import PSPageControl
 
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var pageControl: PSPageControl!
@@ -19,6 +20,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Delegate PageControl
+        pageControl.delegate = self
         
         let loremIpsum = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus.",
                           "Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci.",
@@ -62,5 +66,12 @@ class ViewController: UIViewController {
         }
         
         pageControl.views = views
+    }
+}
+
+// MARK: Protocol to get PSPageControl current index
+extension ViewController: PSPageControlProtocol {
+    func didChange(index: Int) {
+        print("PSPageControl - Current Index: \(index)")
     }
 }
