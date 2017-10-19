@@ -70,7 +70,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: Protocol to get PSPageControl current index
-extension ViewController: PSPageControlProtocol {
+extension ViewController: PSPageControlDelegate {
     func didChange(index: Int) {
         print("PSPageControl - Current Index: \(index)")
     }

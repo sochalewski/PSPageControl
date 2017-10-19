@@ -13,7 +13,7 @@ import UIImageViewAlignedSwift
 /**
  Event to detect when PSPageControl was changed
  */
-public protocol PSPageControlProtocol {
+public protocol PSPageControlDelegate: class {
     func didChange(index: Int)
 }
 
@@ -110,7 +110,7 @@ open class PSPageControl: UIView {
     fileprivate var backgroundLayerFrameOrigin: CGPoint?
     
     /// Delegate to detect when current PSPageControl changed
-    open var delegate: PSPageControlProtocol?
+    open weak var delegate: PSPageControlDelegate?
 
     /**
          Get current PSPageViewControl
