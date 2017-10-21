@@ -1,7 +1,7 @@
 PODS:
-  - PSPageControl (0.2.2):
-    - UIImageViewAlignedSwift (~> 0.4.1)
-  - UIImageViewAlignedSwift (0.4.1)
+  - PSPageControl (0.3.2):
+    - UIImageViewAlignedSwift (~> 0.5.0)
+  - UIImageViewAlignedSwift (0.5.0)
 
 DEPENDENCIES:
   - PSPageControl (from `../`)
@@ -11,8 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  PSPageControl: a830b32b81b9f845328c5c223fe0f0046033c16b
-  UIImageViewAlignedSwift: e72ef2a85a75a01d19b4509ac92a3bdb872cd73c
+  PSPageControl: 94f1ab6027ceb9bb491cfd674443a3c1c10fd5d2
+  UIImageViewAlignedSwift: 2e09096e6081ad26b848e19b4bc35a7d69165740
 
 PODFILE CHECKSUM: 4ae1bd703534f9271493bb7491159c1ea9d4b9b8
 

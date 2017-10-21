@@ -49,10 +49,7 @@ open class PSPageControl: UIView {
             guard let views = views else { pageControl.numberOfPages = 0; return }
             
             for (index, view) in views.enumerated() {
-                view.frame = CGRect(x: CGFloat(index) * frame.width,
-                    y: 0.0,
-                    width: frame.width,
-                    height: frame.height)
+                view.frame = CGRect(x: CGFloat(index) * frame.width, y: 0.0, width: frame.width, height: frame.height)
                 addSubview(view)
             }
             
@@ -69,7 +66,7 @@ open class PSPageControl: UIView {
             pageControl.pageIndicatorTintColor = newValue
         }
         get {
-            return self.pageIndicatorTintColor
+            return pageControl.pageIndicatorTintColor
         }
     }
     
@@ -79,7 +76,7 @@ open class PSPageControl: UIView {
             pageControl.currentPageIndicatorTintColor = newValue
         }
         get {
-            return self.currentPageIndicatorTintColor
+            return pageControl.currentPageIndicatorTintColor
         }
     }
     
@@ -138,12 +135,9 @@ open class PSPageControl: UIView {
      - returns: A Boolean value that determines whether the function finished with success.
      */
     public func showView(withIndex index: Int) -> Bool {
-        if let views = views, index < views.count, index >= 0 {
-            showView(withIndex: index, setCurrentPage: true)
-            return true
-        } else {
-            return false
-        }
+        guard let views = views, index < views.count, index >= 0 else { return false }
+        showView(withIndex: index, setCurrentPage: true)
+        return true
     }
     
     private func setup() {
@@ -214,7 +208,7 @@ open class PSPageControl: UIView {
     open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesMoved(touches, with: event)
         
-        let differenceInTouchXAxis = difference(fromTouches: touches)
+        let differenceInTouchXAxis = difference(between: touches)
         
         UIView.animate(withDuration: 0.1) {
             for (index, view) in self.views!.enumerated() {
@@ -230,7 +224,7 @@ open class PSPageControl: UIView {
     open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         
-        let differenceInTouchXAxis = difference(fromTouches: touches)
+        let differenceInTouchXAxis = difference(between: touches)
         
         switch differenceInTouchXAxis {
         case let x where x < -100:
@@ -242,7 +236,7 @@ open class PSPageControl: UIView {
         }
     }
     
-    private func difference(fromTouches touches: Set<UITouch>) -> Int {
+    private func difference(between touches: Set<UITouch>) -> Int {
         let movingPosition = touches.first?.location(in: self)
         
         return Int(movingPosition!.x - touchPosition!.x)

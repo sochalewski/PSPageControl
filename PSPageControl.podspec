@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PSPageControl"
-  s.version          = "0.2.2"
+  s.version          = "0.3.2"
   s.summary          = "Easy parallax effect in UIPageControl"
   s.description      = "Easy parallax effect in UIPageControl in Swift."
   s.homepage         = "https://github.com/sochalewski/PSPageControl"
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = '*.swift'
   s.frameworks = 'UIKit'
-  s.dependency 'UIImageViewAlignedSwift', '~> 0.4.1'
+  s.dependency 'UIImageViewAlignedSwift', '~> 0.5.0'
 end

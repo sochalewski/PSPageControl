@@ -10,7 +10,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-Swift 3, iOS 8+
+* iOS 8.0+, tvOS 9.0+
+* Swift
+** 4.0
+** 3.x (`swift3` branch)
 
 ## Installation
 
