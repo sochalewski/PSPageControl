@@ -9,10 +9,9 @@
 import UIKit
 import PSPageControl
 
-
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
-    @IBOutlet weak var pageControl: PSPageControl!
+    @IBOutlet private weak var pageControl: PSPageControl!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -36,7 +35,7 @@ class ViewController: UIViewController {
         // Prepare views to add
         var views = [UIView]()
         
-        for index in 1...5 {
+        (1...5).forEach { index in
             let view = UIView(frame: self.view.frame)
             
             let label = UILabel(frame: CGRect(x: self.view.frame.width / 2.0 - 60.0,

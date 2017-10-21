@@ -10,18 +10,20 @@ import AVFoundation
 import UIKit
 import UIImageViewAlignedSwift
 
-/**
- Event to detect when PSPageControl was changed
- */
 public protocol PSPageControlDelegate: class {
+    /**
+     The delegate method called when the current index did change.
+     - parameter index: The current index.
+     */
     func didChange(index: Int)
 }
 
 open class PSPageControl: UIView {
     
-    /**
-     The image shown in the background. It should be horizontal with proper ratio and high resolution.
-     */
+    /// The PSPageControl's delegate protocol.
+    open weak var delegate: PSPageControlDelegate?
+    
+    /// The image shown in the background. It should be horizontal with proper ratio and high resolution.
     open var backgroundPicture: UIImage? {
         didSet {
             guard let backgroundPicture = backgroundPicture else { return }
@@ -37,9 +39,7 @@ open class PSPageControl: UIView {
         }
     }
     
-    /**
-     The array of `UIView`s to be shown by page control.
-     */
+    ///  The array of `UIView`s to be shown by page control.
     open var views: [UIView]? {
         didSet {
             subviews.filter( { !subviewsNotAllowedToRemoveFromSuperview.contains($0) } ).forEach {
@@ -60,14 +60,10 @@ open class PSPageControl: UIView {
         }
     }
     
-    /**
-     Offset per page in pixels. Default is `40`.
-     */
+    /// Offset per page in pixels. Default is `40`.
     open var offsetPerPage: UInt = 40
     
-    /**
-     The tint color to be used for the page indicator.
-     */
+    /// The tint color to be used for the page indicator.
     open var pageIndicatorTintColor: UIColor? {
         set {
             pageControl.pageIndicatorTintColor = newValue
@@ -77,9 +73,7 @@ open class PSPageControl: UIView {
         }
     }
     
-    /**
-     The tint color to be used for the current page indicator.
-     */
+    /// The tint color to be used for the current page indicator.
     open var currentPageIndicatorTintColor: UIColor? {
         set {
             pageControl.currentPageIndicatorTintColor = newValue
@@ -103,36 +97,14 @@ open class PSPageControl: UIView {
         }
     }
     
-    fileprivate var subviewsNotAllowedToRemoveFromSuperview = [UIView]()
-    fileprivate var background = UIImageViewAligned()
-    fileprivate var pageControl = UIPageControl()
-    fileprivate var touchPosition: CGPoint?
-    fileprivate var backgroundLayerFrameOrigin: CGPoint?
-    
-    /// Delegate to detect when current PSPageControl changed
-    open weak var delegate: PSPageControlDelegate?
-
-    /**
-         Get current PSPageViewControl
-     */
-    open var currentViewIndex = 0 {
-        didSet {
-            delegate?.didChange(index: currentViewIndex)
-        }
-    }
-    
-    
-    fileprivate func setup() {
-        // Background image
-        background.contentMode = .scaleAspectFill
-        background.alignment = .left
-        addSubview(background)
-        
-        // Page control
-        addSubview(pageControl)
-        
-        // Array of views not allowed to remove from superview
-        subviewsNotAllowedToRemoveFromSuperview = [background, pageControl]
+    private var subviewsNotAllowedToRemoveFromSuperview = [UIView]()
+    private var background = UIImageViewAligned()
+    private var pageControl = UIPageControl()
+    private var touchPosition: CGPoint?
+    private var backgroundLayerFrameOrigin: CGPoint?
+    /// The current page.
+    private(set) var currentViewIndex = 0 {
+        didSet { delegate?.didChange(index: currentViewIndex) }
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -174,7 +146,20 @@ open class PSPageControl: UIView {
         }
     }
     
-    fileprivate func showView(withIndex index: Int, setCurrentPage currentPage: Bool) {
+    private func setup() {
+        // Background image
+        background.contentMode = .scaleAspectFill
+        background.alignment = .left
+        addSubview(background)
+        
+        // Page control
+        addSubview(pageControl)
+        
+        // Array of views not allowed to remove from superview
+        subviewsNotAllowedToRemoveFromSuperview = [background, pageControl]
+    }
+    
+    private func showView(withIndex index: Int, setCurrentPage currentPage: Bool) {
         // Background image
         if index != currentViewIndex {
             let newX = CGFloat(-index - 1) * CGFloat(offsetPerPage)
@@ -220,12 +205,6 @@ open class PSPageControl: UIView {
     
     // MARK: - Touches
     
-    fileprivate func difference(fromTouches touches: Set<UITouch>) -> Int {
-        let movingPosition = touches.first?.location(in: self)
-        
-        return Int(movingPosition!.x - touchPosition!.x)
-    }
-    
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         
@@ -261,5 +240,11 @@ open class PSPageControl: UIView {
         default:
             showView(withIndex: currentViewIndex, setCurrentPage: false)
         }
+    }
+    
+    private func difference(fromTouches touches: Set<UITouch>) -> Int {
+        let movingPosition = touches.first?.location(in: self)
+        
+        return Int(movingPosition!.x - touchPosition!.x)
     }
 }
